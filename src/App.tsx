@@ -3,7 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-
+import HeaderComponent from './shared/components/header';
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -54,7 +54,8 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        Item One
+      <HeaderComponent/>
+
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         Item Two
